@@ -1,4 +1,4 @@
-export const getBallz = (league) => {
+const fillHopper = league => {
   const ballzArray = [];
   for (const [key, value] of Object.entries(league)) {
     let teamArray = new Array(value).fill(key)
@@ -6,3 +6,5 @@ export const getBallz = (league) => {
   }
   return ballzArray;
 };
+
+export default fillHopper;
