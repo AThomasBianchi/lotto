@@ -1,10 +1,10 @@
 const fillHopper = league => {
-  const ballzArray = [];
+  const hopper = [];
   for (const [key, value] of Object.entries(league)) {
-    let teamArray = new Array(value).fill(key)
-    ballzArray.push(...teamArray);
+    let teamBalls = new Array(value).fill(key)
+    hopper.push(...teamBalls);
   }
-  return ballzArray;
+  return ballzBalls;
 };
 
 export default fillHopper;
