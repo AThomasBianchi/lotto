@@ -1,0 +1,26 @@
+{
+  "name": "lotto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fillHopper.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AThomasBianchi/lotto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AThomasBianchi/lotto/issues"
+  },
+  "homepage": "https://github.com/AThomasBianchi/lotto#readme"
+}
