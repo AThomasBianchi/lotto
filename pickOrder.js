@@ -1,7 +1,9 @@
 import fillHopper from './fillHopper.js';
-import { testLeague } from './ballData.js';
+import { testLeague, realLeague } from './ballData.js';
 
-const lottoBalls = fillHopper(testLeague);
+const testBalls = fillHopper(testLeague);
+const realBalls = fillHopper(realLeague);
+
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -19,10 +21,10 @@ const pickOrder = (lottoBalls) => {
 }
 
 
-const testPicks = (testNum) => {
+const testPicks = (testNum, balls) => {
   let results = {};
   for (let i = 0; i < testNum; i++) {
-    let order = pickOrder(lottoBalls);
+    let order = pickOrder(balls);
     if (!results[order[0]]) {
       results[order[0]] = 1
     } else {
@@ -32,5 +34,5 @@ const testPicks = (testNum) => {
   return results;
 }
 
-console.log(testPicks(1000));
+console.log(testPicks(1000, realBalls));
 

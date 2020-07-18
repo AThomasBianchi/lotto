@@ -4,7 +4,7 @@ const fillHopper = league => {
     let teamBalls = new Array(value).fill(key)
     hopper.push(...teamBalls);
   }
-  return ballzBalls;
+  return hopper;
 };
 
 export default fillHopper;
